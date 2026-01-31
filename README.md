@@ -30,7 +30,7 @@ vivado -mode gui -source master_tcl.tcl`
 
 IMPORTANT: The project setup will only initialize correctly if the script is invoked from the parent repository directory.
 
-3. Generate and Simulate
+### 3. Generate and Simulate
 Once the Vivado GUI opens and the project is created:
 
 In the Sources pane, locate and right-click on design_1.bd.
