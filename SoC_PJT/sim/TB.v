@@ -45,8 +45,8 @@ module TB(
     .qspi_flash_io3_io(fio3),
     .qspi_flash_sck_io(SCK),
     .qspi_flash_ss_io(CS),
-    .trap_0(trap)
-    //.gpio_io_o_0(gpio_io_o_0)
+    .trap_0(trap),
+    .led_4bits_tri_io(gpio_io_o_0)
     );
 //    .led_4bits_tri(led));
     
@@ -74,10 +74,10 @@ module TB(
 );
   
    initial begin
-   reset_0=1;
+   reset_0=0;
    #tdevice_PU
    #10
-   reset_0=0;
+   reset_0=1;
    end
    
    always @(posedge clk) begin
