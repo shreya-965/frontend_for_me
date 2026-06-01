@@ -246,7 +246,7 @@ module picorv32_core #(
 	);
 
 
-localparam MEM_SIZE=32'h1000;
+localparam MEM_SIZE=32'h00004000;
     
 
     reg m_read_en;   
@@ -262,8 +262,8 @@ reg bram_valid_r;
     
 
         always@(*)
-        begin
-            if(mem_addr<=32'h00001000)
+		begin
+			if (mem_addr < MEM_SIZE)
             //if(mem_addr!=32'd100)
             begin
                 //BRAM logic;
@@ -280,8 +280,8 @@ reg bram_valid_r;
             m_read_en <= 0;
             w_en <= 0;
 
-            // 1. BRAM Write (data write into memory)
-            if (mem_valid && !mem_ready && |mem_wstrb && (mem_addr <= MEM_SIZE)) begin
+			// 1. BRAM Write (data write into memory)
+			if (mem_valid && !mem_ready && |mem_wstrb && (mem_addr < MEM_SIZE)) begin
             w_en <= mem_wstrb;
             end
             //bram sync
@@ -307,7 +307,7 @@ assign temp_mem_addr=(mem_addr==32'd100)?mem_addr:temp_mem_addr;
 assign temp_mem_wdata=(mem_addr==32'd100)?mem_wdata:temp_mem_wdata ;
 assign temp_mem_wstrb=(mem_addr==32'd100)?mem_wstrb:temp_mem_wstrb;*/
 
-assign temp_mem_valid=(((mem_addr>>2)>=32'h1000 ))&&mem_valid; //4096 words
+assign temp_mem_valid=(mem_addr >= MEM_SIZE) && mem_valid;
 assign temp_mem_instr=mem_instr;
 assign temp_mem_addr=mem_addr;
 assign temp_mem_wdata=mem_wdata  ;
