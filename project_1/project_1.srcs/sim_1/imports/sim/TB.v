@@ -85,7 +85,7 @@ always @(posedge clk) begin
 
         if (recv_data == 8'hFF) begin
             firmware_ready <= 1;
-            $display("BootROM waiting for host command");
+            $display("Firmware waiting for host command");
         end
     end
 end
@@ -118,6 +118,9 @@ endtask
 //------------------------------------------
 // Host behavior
 //------------------------------------------
+//------------------------------------------
+// Host behavior
+//------------------------------------------
 initial begin
 
     uart_rx = 1'b1;
@@ -125,52 +128,49 @@ initial begin
     // Wait for reset release
     wait(reset_0 == 1);
 
-    // Wait until BootROM/Firmware is ready
+    // Wait until firmware sends 0xFF
     wait(firmware_ready == 1);
-    firmware_ready = 0;
 
     #100000;
 
     //----------------------------------
-    // Invalid command
+    // Send invalid command
     //----------------------------------
-    $display("\nHOST -> Sending INVALID command 0x20");
+    $display("\nHOST -> Sending 0x20");
     uart_send_byte(8'h20);
 
-    // Invalid command should NOT generate another 0xFF
-    // Give a small idle gap only
-    #500000;
+    #1000000;
 
     //----------------------------------
-    // Default dataset
+    // Send Batch 5
     //----------------------------------
-    $display("\nHOST -> Sending DEFAULT command 0x10");
+    firmware_ready = 0;
+   $display("\nHOST -> Sending 0x05");
+   uart_send_byte(8'h05);
+
+    // Wait until firmware loops back
+    wait(firmware_ready == 1);
+
+   #100000;
+
+    //----------------------------------
+    // Send Default Dataset
+    //----------------------------------
+    firmware_ready = 0;
+    $display("\nHOST -> Sending 0x10");
     uart_send_byte(8'h10);
 
-    // Wait until firmware finishes all predictions
+    //Wait until firmware loops back
     wait(firmware_ready == 1);
+
+    #100000;
+  
+    //----------------------------------
+    // Send Batch 10
+    //----------------------------------
     firmware_ready = 0;
-
-    //----------------------------------
-    // Batch 1
-    //----------------------------------
-    $display("\nHOST -> Sending BATCH 1 command 0x01");
-    uart_send_byte(8'h01);
-
-    wait(firmware_ready == 1);
-    firmware_ready = 0;
-
-    //----------------------------------
-    // Batch 2
-    //----------------------------------
-    $display("\nHOST -> Sending BATCH 2 command 0x02");
-    uart_send_byte(8'h02);
-
-    wait(firmware_ready == 1);
-    firmware_ready = 0;
-
-    $display("\n========== TEST COMPLETE ==========");
-    $finish;
+    $display("\nHOST -> Sending 0x0A");
+    uart_send_byte(8'h0A);
 
 end
 endmodule

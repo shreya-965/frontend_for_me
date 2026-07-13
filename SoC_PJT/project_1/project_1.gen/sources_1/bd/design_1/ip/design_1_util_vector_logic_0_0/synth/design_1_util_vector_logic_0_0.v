@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:util_vector_logic:2.0
-// IP Revision: 4
+// IP Revision: 5
 
-(* X_CORE_INFO = "util_vector_logic_v2_0_4_util_vector_logic,Vivado 2024.2" *)
-(* CHECK_LICENSE_TYPE = "design_1_util_vector_logic_0_0,util_vector_logic_v2_0_4_util_vector_logic,{}" *)
-(* CORE_GENERATION_INFO = "design_1_util_vector_logic_0_0,util_vector_logic_v2_0_4_util_vector_logic,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=util_vector_logic,x_ipVersion=2.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,C_OPERATION=not,C_SIZE=1}" *)
+(* X_CORE_INFO = "util_vector_logic_v2_0_5_util_vector_logic,Vivado 2025.2" *)
+(* CHECK_LICENSE_TYPE = "design_1_util_vector_logic_0_0,util_vector_logic_v2_0_5_util_vector_logic,{}" *)
+(* CORE_GENERATION_INFO = "design_1_util_vector_logic_0_0,util_vector_logic_v2_0_5_util_vector_logic,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=util_vector_logic,x_ipVersion=2.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,C_OPERATION=not,C_SIZE=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_util_vector_logic_0_0 (
   Op1,
@@ -62,7 +62,7 @@ module design_1_util_vector_logic_0_0 (
 input wire [0 : 0] Op1;
 output wire [0 : 0] Res;
 
-  util_vector_logic_v2_0_4_util_vector_logic #(
+  util_vector_logic_v2_0_5_util_vector_logic #(
     .C_OPERATION("not"),
     .C_SIZE(1)
   ) inst (

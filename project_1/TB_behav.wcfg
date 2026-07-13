@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB" />
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="comp_defs" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="321,419,042,995 ps"></ZoomStartTime>
+      <ZoomEndTime time="321,419,043,001 ps"></ZoomEndTime>
+      <Cursor1Time time="321,419,043,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject type="logic" fp_name="/TB/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/reset_0">
+      <obj_property name="ElementShortName">reset_0</obj_property>
+      <obj_property name="ObjectShortName">reset_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/uart_tx">
+      <obj_property name="ElementShortName">uart_tx</obj_property>
+      <obj_property name="ObjectShortName">uart_tx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/uart_rx">
+      <obj_property name="ElementShortName">uart_rx</obj_property>
+      <obj_property name="ObjectShortName">uart_rx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/fio0">
+      <obj_property name="ElementShortName">fio0</obj_property>
+      <obj_property name="ObjectShortName">fio0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/fio1">
+      <obj_property name="ElementShortName">fio1</obj_property>
+      <obj_property name="ObjectShortName">fio1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/fio2">
+      <obj_property name="ElementShortName">fio2</obj_property>
+      <obj_property name="ObjectShortName">fio2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/fio3">
+      <obj_property name="ElementShortName">fio3</obj_property>
+      <obj_property name="ObjectShortName">fio3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/CS">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/SCK">
+      <obj_property name="ElementShortName">SCK</obj_property>
+      <obj_property name="ObjectShortName">SCK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/trap">
+      <obj_property name="ElementShortName">trap</obj_property>
+      <obj_property name="ObjectShortName">trap</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TB/gpio_io_o_0">
+      <obj_property name="ElementShortName">gpio_io_o_0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_io_o_0[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TB/recv_data">
+      <obj_property name="ElementShortName">recv_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">recv_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/data_valid_rcv">
+      <obj_property name="ElementShortName">data_valid_rcv</obj_property>
+      <obj_property name="ObjectShortName">data_valid_rcv</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/firmware_ready">
+      <obj_property name="ElementShortName">firmware_ready</obj_property>
+      <obj_property name="ObjectShortName">firmware_ready</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/TB/tdevice_PU">
+      <obj_property name="ElementShortName">tdevice_PU</obj_property>
+      <obj_property name="ObjectShortName">tdevice_PU</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TB/BIT_PERIOD">
+      <obj_property name="ElementShortName">BIT_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BIT_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/dut/design_1_i/picorv32_core_0/inst/pico_core/mem_valid">
+      <obj_property name="ElementShortName">mem_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/dut/design_1_i/picorv32_core_0/inst/pico_core/mem_instr">
+      <obj_property name="ElementShortName">mem_instr</obj_property>
+      <obj_property name="ObjectShortName">mem_instr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TB/dut/design_1_i/picorv32_core_0/inst/pico_core/mem_ready">
+      <obj_property name="ElementShortName">mem_ready</obj_property>
+      <obj_property name="ObjectShortName">mem_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TB/dut/design_1_i/picorv32_core_0/inst/pico_core/mem_addr">
+      <obj_property name="ElementShortName">mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TB/dut/design_1_i/picorv32_core_0/inst/pico_core/mem_wdata">
+      <obj_property name="ElementShortName">mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TB/dut/design_1_i/picorv32_core_0/inst/pico_core/mem_wstrb">
+      <obj_property name="ElementShortName">mem_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TB/dut/design_1_i/picorv32_core_0/inst/pico_core/mem_rdata">
+      <obj_property name="ElementShortName">mem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_rdata[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,9 +1,9 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-//Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+//Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-//Date        : Fri Jan 30 19:12:37 2026
-//Host        : simics-B360M-DS3H running 64-bit Ubuntu 22.04.5 LTS
+//Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+//Date        : Mon Jul  6 20:38:46 2026
+//Host        : shreya-ROG-Strix-G512LI-G512LI running 64-bit Ubuntu 26.04 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -1132,7 +1132,7 @@ module design_1_axi_interconnect_0_0
         .S_AXI_wready(S00_AXI_wready),
         .S_AXI_wstrb(S00_AXI_wstrb),
         .S_AXI_wvalid(S00_AXI_wvalid));
-  design_1_axi_interconnect_0_imp_xbar_0 xbar
+  design_1_axi_interconnect_0_upgraded_ipi_imp_xbar_0 xbar
        (.aclk(ACLK),
         .aresetn(ARESETN),
         .m_axi_araddr({xbar_to_m03_couplers_ARADDR,xbar_to_m02_couplers_ARADDR,xbar_to_m01_couplers_ARADDR,xbar_to_m00_couplers_ARADDR}),

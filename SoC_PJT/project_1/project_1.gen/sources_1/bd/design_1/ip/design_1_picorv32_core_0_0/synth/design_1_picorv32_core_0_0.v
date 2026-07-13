@@ -48,9 +48,9 @@
 
 
 // IP VLNV: user.org:user:picorv32_core:1.0
-// IP Revision: 10
+// IP Revision: 12
 
-(* X_CORE_INFO = "picorv32_core,Vivado 2024.2" *)
+(* X_CORE_INFO = "picorv32_core,Vivado 2025.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_picorv32_core_0_0,picorv32_core,{}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)

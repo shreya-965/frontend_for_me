@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:blk_mem_gen:8.4
-// IP Revision: 9
+// IP Revision: 12
 
 `timescale 1ns/1ps
 
@@ -82,7 +82,7 @@ input wire [31 : 0] dina;
 output wire [31 : 0] douta;
 output wire rsta_busy;
 
-  blk_mem_gen_v8_4_9 #(
+  blk_mem_gen_v8_4_12 #(
     .C_FAMILY("artix7"),
     .C_XDEVICEFAMILY("artix7"),
     .C_ELABORATION_DIR("./"),

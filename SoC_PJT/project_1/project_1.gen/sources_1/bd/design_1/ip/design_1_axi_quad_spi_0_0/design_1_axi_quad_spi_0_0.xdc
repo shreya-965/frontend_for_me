@@ -44,34 +44,26 @@
 # 
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
+create_waiver -scope -internal -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
 -from [get_pins -quiet -filter {REF_PIN_NAME=~*C} -of_objects [get_cells -hierarchical -filter {NAME =~*CDC*}]] \
 -to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*CDC*}]]
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
--from [get_pins -quiet -filter {REF_PIN_NAME=~*C} -of_objects [get_cells -hierarchical -filter {NAME =~*drr_Overrun_int_cdc_from_spi_int_2_reg}]] \
--to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*DRR_OVERRUN_SYNC_SPI_cdc_to_AXI_1}]]
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
--from [get_pins -quiet -filter {REF_PIN_NAME=~*C} -of_objects [get_cells -hierarchical -filter {NAME =~*CMD_decoded_int_reg}]] \
--to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to}]]
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
--from [get_pins -quiet -filter {REF_PIN_NAME=~*C} -of_objects [get_cells -hierarchical -filter {NAME =~*qspo_int_reg[*]}]] \
--to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to}]]
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
--from [get_pins -quiet -filter {REF_PIN_NAME=~*C} -of_objects [get_cells -hierarchical -filter {NAME =~*rst_reg}]] \
--to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*RESET_SYNC_AX2S_1}]]
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
+
+
+create_waiver -scope -internal -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
 -from [get_pins -quiet -filter {REF_PIN_NAME=~*C} -of_objects [get_cells -hierarchical -filter {NAME =~*_reg*}]] \
--to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to}]]
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
--from [get_pins -quiet -filter {REF_PIN_NAME=~*C} -of_objects [get_cells -hierarchical -filter {NAME =~*Bus2IP_Reset_i_reg*}]] \
+-to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*syncstages_ff_reg*}]]
+
+create_waiver -scope -internal -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
 -to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*RESET_SYNC_AX2S_1}]]
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -type CDC -id CDC-10 -description "waiving off" \
--from [get_pins -quiet -filter {REF_PIN_NAME=~*C} -of_objects [get_cells -hierarchical -filter {NAME =~*RST_FLOPS*}]] \
--to   [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*RESET_SYNC_AX2S_1}]]
-create_waiver -scope -internal -quiet -user "axi_quad_spi" -internal -type CDC -id CDC-2 -description "waving off" \
+
+create_waiver -scope -internal -user "axi_quad_spi" -internal -type CDC -id CDC-2 -description "waving off" \
 -from [get_pins -quiet -of_objects [get_cells -hierarchical -filter {NAME =~*CDC*}]] \
 -to [get_pins -quiet -of_objects [get_cells -hierarchical -filter {NAME =~*CDC*}]]
 
+
+
 ## IOB constraints ######
 set_property IOB true [get_cells -hierarchical -filter {NAME =~*IO*_I_REG}]
+
+set_property IOB true [get_cells -hierarchical -filter {NAME =~*SCK_O_NE_4_FDRE_INST}]
 #######################################

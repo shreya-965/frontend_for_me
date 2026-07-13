@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Jul  6 20:39:06 2026
+# Process ID         : 11406
+# Current directory  : /home/shreya/frontend_for_me/SoC_PJT/project_1/project_1.runs/design_1_proc_sys_reset_0_0_synth_1
+# Command line       : vivado -log design_1_proc_sys_reset_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_proc_sys_reset_0_0.tcl
+# Log file           : /home/shreya/frontend_for_me/SoC_PJT/project_1/project_1.runs/design_1_proc_sys_reset_0_0_synth_1/design_1_proc_sys_reset_0_0.vds
+# Journal file       : /home/shreya/frontend_for_me/SoC_PJT/project_1/project_1.runs/design_1_proc_sys_reset_0_0_synth_1/vivado.jou
+# Running On         : shreya-ROG-Strix-G512LI-G512LI
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 26.04 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency      : 2499.989 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16001 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20296 MB
+# Available Virtual  : 15391 MB
+#-----------------------------------------------------------
+source design_1_proc_sys_reset_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1564.875 ; gain = 75.059 ; free physical = 1990 ; free virtual = 10653
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/shreya/frontend_for_me/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/run/media/shreya/Ultra Touch/Vivado/ubuntu_vivado/2025.2/data/ip'.
+Command: synth_design -top design_1_proc_sys_reset_0_0 -part xc7a35tcsg324-1 -incremental_mode off -mode out_of_context
+ERROR: [Common 17-165] Too many positional options when parsing 'Touch/Vivado/ubuntu_vivado/2025.2/data/designAnalysis/custom_qor_flows/common/custom_qor_design_analysis.tcl', please type 'source -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing 'Touch/Vivado/ubuntu_vivado/2025.2/data/designAnalysis/custom_qor_flows/common/custom_qor_device_analysis.tcl', please type 'source -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing 'Touch/Vivado/ubuntu_vivado/2025.2/data/designAnalysis/custom_qor_flows/common/custom_qor_hierarchy_floorplanning.tcl', please type 'source -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing 'Touch/Vivado/ubuntu_vivado/2025.2/data/designAnalysis/custom_qor_flows/common/custom_qor_utilities.tcl', please type 'source -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing 'Touch/Vivado/ubuntu_vivado/2025.2/data/designAnalysis/custom_qor_flows/common/tcl_utilities.tcl', please type 'source -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing 'Touch/Vivado/ubuntu_vivado/2025.2/data/designAnalysis/custom_qor_flows/report_qor_suggestions/verified/gt_floorplan.tcl', please type 'source -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing 'Touch/Vivado/ubuntu_vivado/2025.2/data/designAnalysis/custom_qor_flows/report_qor_suggestions/verified/unroll_srl_to_input.tcl', please type 'source -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing 'Touch/Vivado/ubuntu_vivado/2025.2/data/designAnalysis/custom_qor_flows/report_qor_assessment/verified/slr_crossing_utilization.tcl', please type 'source -help' for usage info.
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11831
+ERROR: [Synth 8-522] parsing error: cannot open vhdl file '/run/media/shreya/Ultra'

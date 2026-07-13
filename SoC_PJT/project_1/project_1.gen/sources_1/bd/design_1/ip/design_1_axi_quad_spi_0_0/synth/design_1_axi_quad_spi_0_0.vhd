@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_quad_spi:3.2
--- IP Revision: 32
+-- IP Revision: 35
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_quad_spi_v3_2_32;
-USE axi_quad_spi_v3_2_32.axi_quad_spi;
+LIBRARY axi_quad_spi_v3_2_35;
+USE axi_quad_spi_v3_2_35.axi_quad_spi;
 
 ENTITY design_1_axi_quad_spi_0_0 IS
   PORT (
@@ -258,11 +258,11 @@ ARCHITECTURE design_1_axi_quad_spi_0_0_arch OF design_1_axi_quad_spi_0_0 IS
     );
   END COMPONENT axi_quad_spi;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF design_1_axi_quad_spi_0_0_arch: ARCHITECTURE IS "axi_quad_spi,Vivado 2024.2";
+  ATTRIBUTE X_CORE_INFO OF design_1_axi_quad_spi_0_0_arch: ARCHITECTURE IS "axi_quad_spi,Vivado 2025.2";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_axi_quad_spi_0_0_arch : ARCHITECTURE IS "design_1_axi_quad_spi_0_0,axi_quad_spi,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_quad_spi_0_0_arch: ARCHITECTURE IS "design_1_axi_quad_spi_0_0,axi_quad_spi,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_quad_spi,x_ipVersion=3.2,x_ipCoreRevision=32,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,Async_Clk=0,C_FAMILY=artix7,C_SELECT_XPM=0,C_SUB_FAMILY=artix7,C_INSTANCE=axi_quad_spi_inst,C_SPI_MEM_ADDR_BITS=24,C_TYPE_OF_AXI4_INTERFACE=1,C_XIP_MODE=0,C_XIP_PERF_MODE=1,C_BYTE_LEVEL_INTERRUPT_EN=0,C_UC_FAMILY=0,C_FIFO_DEPTH=16,C_SCK_RATIO=2,C_DUAL_QUAD_MODE=0,C_NUM_SS_BITS=1,C_NUM_TRANSFER" & 
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_quad_spi_0_0_arch: ARCHITECTURE IS "design_1_axi_quad_spi_0_0,axi_quad_spi,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_quad_spi,x_ipVersion=3.2,x_ipCoreRevision=35,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG,Async_Clk=0,C_FAMILY=artix7,C_SELECT_XPM=0,C_SUB_FAMILY=artix7,C_INSTANCE=axi_quad_spi_inst,C_SPI_MEM_ADDR_BITS=24,C_TYPE_OF_AXI4_INTERFACE=1,C_XIP_MODE=0,C_XIP_PERF_MODE=1,C_BYTE_LEVEL_INTERRUPT_EN=0,C_UC_FAMILY=0,C_FIFO_DEPTH=16,C_SCK_RATIO=2,C_DUAL_QUAD_MODE=0,C_NUM_SS_BITS=1,C_NUM_TRANSFER" & 
 "_BITS=8,C_NEW_SEQ_EN=1,C_SPI_MODE=2,C_USE_STARTUP=0,C_USE_STARTUP_EXT=0,C_SPI_MEMORY=3,C_S_AXI_ADDR_WIDTH=7,C_S_AXI_DATA_WIDTH=32,C_S_AXI4_ADDR_WIDTH=24,C_S_AXI4_DATA_WIDTH=32,C_S_AXI4_ID_WIDTH=1,C_SHARED_STARTUP=0,C_S_AXI4_BASEADDR=0xA0000000,C_S_AXI4_HIGHADDR=0xAFFFFFFF,C_LSB_STUP=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_MODE : STRING;

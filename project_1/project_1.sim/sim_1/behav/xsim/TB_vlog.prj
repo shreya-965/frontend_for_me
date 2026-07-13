@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "F:/Vivado/latest_version_2025/2025.2/Vivado/data/rsb/busdef" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/a415" \
+verilog xil_defaultlib  --include "../../../../../../../../run/media/shreya/Ultra Touch/Vivado/ubuntu_vivado/2025.2/data/rsb/busdef" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/a415" \
 "../../../../project_1.ip_user_files/bd/design_1/ip/design_1_picorv32_core_0_0/src/sim/blk_mem_gen_0.v" \
 "../../../../project_1.gen/sources_1/bd/design_1/ipshared/4006/src/picorv32.v" \
 "../../../../project_1.gen/sources_1/bd/design_1/ipshared/4006/src/picorv32_core.v" \
